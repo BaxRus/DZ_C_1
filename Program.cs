@@ -1,19 +1,6 @@
-﻿Console.Write("Введите первое число ");
+﻿Console.Write("Введите число ");
 int a = Convert.ToInt32(Console.ReadLine());
-Console.Write("Введите второе число ");
-int b = Convert.ToInt32(Console.ReadLine());
-Console.Write("Введите третье число ");
-int c = Convert.ToInt32(Console.ReadLine());
-int max = 0;
-
-if (a >= b && a >= c)
-        max = a;
-else
-    if (b >= a && b >= c )
-        max = b;
+if (a % 2 == 0)
+    Console.WriteLine("Число четное");
     else
-        if (c >= a && c >= b)
-            max = c;
-
-
-Console.WriteLine("Max = " + max);
+        Console.WriteLine("Число нечетное");
